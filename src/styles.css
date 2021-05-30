@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.buttons {
+     @apply bg-cyan text-white font-bold cursor-pointer duration-300 hover:bg-cyanlight;
+}
+
+.third-section {
+     @apply bg-darkviolet bg-boost-desktop bg-center bg-cover bg-no-repeat h-52 flex flex-col justify-center items-center;
+}
+
+.hoverCyanText {
+     @apply duration-300 hover:text-cyan;
+}
+
+.colorError {
+     @apply placeholder-red border-2 border-red
+}
