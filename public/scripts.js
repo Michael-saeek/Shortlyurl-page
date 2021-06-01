@@ -52,10 +52,10 @@ function makingNewDivElement() {
 
     element.innerHTML = ` 
     <div class="bg-white w-4/5 justify-between mt-3 items-center h-16 mdmax:h-40 mdmax:justify-center m-auto rounded-md flex flex-wrap">
-    <p class="ml-6 lgmax:m-auto">${oldlinks[i]}</p>
+    <p class="ml-6 lgmax:m-auto">${oldlinks[oldlinks.length - 1]}</p>
 
     <div class="mr-6 smmax:flex smmax:flex-col smmax:mx-auto smmax:w-93%">
-    <a class="text-cyan" href="${newshorterLinks[i]}">${newshorterLinks[i]}</a>
+    <a class="text-cyan" href="${newshorterLinks[newshorterLinks.length - 1]}">${newshorterLinks[newshorterLinks.length - 1]}</a>
     <button name="copybtn" class="buttons px-10 py-2 rounded-md smmax:mx-auto smmax:w-93%">Copy</button>
     </div>
     </div>`
