@@ -11,7 +11,6 @@ This is a solution to the [Shortly URL shortening API Challenge challenge on Fro
 
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [Useful resources](#useful-resources)
 
 - [Author](#author)
 
@@ -30,7 +29,7 @@ Users should be able to:
 
 ### Screenshot
 
-![./images/screenshot.png](./images/screenshot.png)
+![Screenshot of the Shorter Web-site](/public/images/screenshot.png)
 
 
 ### Links
