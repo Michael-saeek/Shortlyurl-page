@@ -8,6 +8,10 @@
      @apply bg-cyan text-white font-bold cursor-pointer duration-300 hover:bg-cyanlight;
 }
 
+.btndarkviolet {
+     @apply bg-darkviolet text-white font-bold cursor-pointer duration-300 hover:bg-grayviolet;
+}
+
 .third-section {
      @apply bg-darkviolet bg-boost-desktop bg-center bg-cover bg-no-repeat h-52 flex flex-col justify-center items-center;
 }
@@ -19,3 +23,4 @@
 .colorError {
      @apply placeholder-red border-2 border-red
 }
+

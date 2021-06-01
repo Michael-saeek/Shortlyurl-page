@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="tailwind.css">
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
@@ -13,20 +13,20 @@
 
 <body>
 
-  <main class="font-poppins mobile:text-center">
+  <main class="font-poppins lgmax2:text-center">
     <!-- FIRST SECTION -->
     <section class="pt-10 pb-52 overflow-hidden">
       <header>
-        <nav class="mx-32 mobile:mx-6 flex relative justify-between items-center margin:mx-10 ">
-          <img class="inline-block w-28 h-8 mobile:w-32" src="/images/logo.svg" alt="logo">
+        <nav class="mx-auto w-4/5 mobile:mx-6 flex relative justify-between items-center margin:mx-10 ">
+          <img class="inline-block w-28 h-8 mobile:w-32" src="./images/logo.svg" alt="logo">
 
-          <ul class="flex text-grayviolet font-bold left-44 absolute mobile:hidden flex-wrap">
+          <ul class="flex text-grayviolet font-bold left-44 absolute max850:hidden flex-wrap">
             <li class="mr-8"><a class="duration-300 hover:text-darkviolet" href="">Features</a></li>
             <li class="mr-8"><a class="duration-300 hover:text-darkviolet" href="">Pricing</a></li>
             <li><a class="duration-300 hover:text-darkviolet" href="">Resources</a></li>
           </ul>
 
-          <div class="lgmax:hidden">
+          <div class="max850:hidden">
             <button
               class="text-grayviolet font-bold px-7 py-2 rounded-full cursor-pointer duration-300 hover:bg-clrlogin hover:text-white ">Login</button>
             <button class="buttons rounded-full px-6 py-2">Sign Up</button>
@@ -34,16 +34,16 @@
         </nav>
       </header>
 
-      <div class="mt-28 flex relative">
+      <div class="mt-28 flex relative margin:justify-center">
 
-        <div class="max-w-md mx-32 margin:mx-auto mobile:mx-4">
+        <div class="mx-auto w-4/5 mobile:mx-4 mobile:w-full">
 
           <div class="">
-            <img class="absolute -top-20 -right-24 w-3/6 lgmax:relative lgmax:w-full lgmax:left-0 mobile:mb-12" src="/images/illustration-working.svg" alt="illustration-working">
+            <img class="absolute -top-20 -right-24 w-3/6 lgmax:relative lgmax:w-full lgmax:left-0 mobile:mb-12" src="./images/illustration-working.svg" alt="illustration-working">
           </div>
         
-          <h2 class=" text-verydarkblue text-6xl leading-1.1 font-bold mobile:text-2.75">More than just shorter links</h2>
-          <p class="text-grayviolet mb-6 mobile:mt-4 leading-7">
+          <h2 class="lg:max-w-md text-verydarkblue text-6xl leading-1.1 font-bold mdmax:text-2.75">More than just shorter links</h2>
+          <p class="lg:max-w-md  text-grayviolet mb-6 mobile:mt-4 leading-7">
             Build your brand's recognition and get detailed insights
             on how your links are performing.
           </p>
@@ -58,7 +58,7 @@
       <!-- ICON MENU -->
       <section>
 
-        <div id="icon-menu" class="minmobile:hidden mobile:absolute w-7 top-9 right-8 cursor-pointer">
+        <div id="icon-menu" class="min849:hidden absolute w-7 top-9 right-8 cursor-pointer">
           <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars"
             class="" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path fill="currentColor"
@@ -69,7 +69,7 @@
 
         
           <!-- MENU RESPONSIVE -->
-          <div id="menu-mobile" class="bg-darkviolet text-white py-9 px-5 w-87% m-auto text-center rounded-lg font-bold relative -top-40rem hidden minmobile:hidden shadow-2xl">
+          <div id="menu-mobile" class="bg-darkviolet text-white py-9 px-5 w-87% m-auto text-center rounded-lg font-bold relative max580:-top-37rem -top-40rem hidden min849:hidden shadow-2xl duration-300">
 
             <ul>
               <li class="mb-8"><a href="#">Features</a></li>
@@ -81,7 +81,7 @@
   
             <ul>
               <li class="my-8"><a class="" href="#"></a>Login</li>
-              <li><a class="buttons py-3 px-28 rounded-full" href="#">Sign Up</a></li>
+              <li><a class="buttons py-3 px-24 rounded-full" href="#">Sign Up</a></li>
             </ul>
   
           </div>
@@ -96,41 +96,38 @@
 
 
     <!-- SECOND SECTION -->
-    <section class="bg-bgray h-50rem mobile:h-85rem" >
+    <section class="bg-bgray h-50rem mobile:h-85rem max895:h-78rem max1303:h-64rem " >
 
       <!-- SHORTER LINK INPUT -->
       <section class="relative -top-16 mobile:-top-20">
         <div class="mdmax:flex-col bg-darkviolet bg-shorten-desktop m-auto h-32 w-4/5 px-6 flex justify-center items-center rounded-md mobile:h-40">
-          <input id="input-link" class="pl-6 h-12 rounded-md text-left w-4/5 mr-4 cursor-pointer mobile:w-full mobile:mb-4 mdmax:mr-0" type="text"
+          <input id="input-link" class="pl-6 h-12 rounded-md text-left w-4/5 mr-4 cursor-pointer max769:w-full mobile:mb-4 mdmax:mr-0" type="text"
             placeholder="Shorten a link here...">
                        
             <span id="msg-input" class="text-red italic absolute left-40 bottom-3 text-0.8rem mobile:left-16 mobile:top-4.3rem hidden">Please add link</span>
 
-          <button id="btn-shorten" class="buttons h-12 w-1/6 rounded-md mdmax:mt-2 mobile:w-full"> Shorten It!</button>
+          <button id="btn-shorten" class="buttons h-12 w-1/6 rounded-md mdmax:mt-2 max769:w-full"> Shorten It!</button>
         </div>
       </section>
 
   
         <article id="list-links" class="relative -top-16 mobile:-top-20">
-          
-      <!--
-            <div class="bg-white w-4/5 mt-3 flex justify-between items-center h-16 m-auto rounded-md">
-              <p class="ml-6">https://www.frontendmentor.io</p>
 
-              <div class="mr-6">
-                <a class="text-cyan" href="#">https://relink/k4lKyk</a>
-                <button class="buttons px-10 py-2 rounded-md ml-4">Copy</button>
+          <div id="loadingElement" class="bg-white w-4/5 mt-3 hidden justify-center items-center h-16 m-auto rounded-md">
+              <div class="bg-gradient-to-bl from-darkviolet to-blue-300 w-8 h-10 flex justify-center items-center rounded-full animate-spin">
+                  <div class="bg-white w-20 h-7 rounded-full"></div>
               </div>
-            </div>
-      -->
-
+          </div>
+          
+          
+          
         </article>
 
       <!-- END SHORTER INPUT -->
 
-      <div class="mx-32 py-20 relative flex flex-col items-center ">
+      <div class="mx-auto relative py-20 flex flex-col items-center -top-20 ">
 
-        <div class="mobile:w-80 absolute mt-10 w-28rem text-center flex flex-col flex-wrap justify-center items-center ">
+        <div class="lgmax2:w-80 mx-5 mt-10 w-28rem text-center flex flex-col flex-wrap justify-center items-center ">
           <h3 class="text-3xl font-bold text-darkviolet mb-3">Advanced Statistics</h3>
 
           <p class="text-grayviolet">
@@ -139,13 +136,13 @@
           </p>
         </div>
 
-        <div class="absolute flex flex-wrap justify-around mt-20 top-52 mobile:top-20 mobile:mt-64">
+        <div class="flex flex-wrap justify-around mt-20 top-10  mobile:top-28 mobile:mt-64 relative">
 
           <div class="bg-white rounded-md w-20rem h-56 px-8 pb-6 mr-11 relative shadow-2xl lgmax:mr-0">
             <div class="absolute w-17rem mt-12 mobile:w-64">
 
               <div class="bg-darkviolet p-4 rounded-full inline-block absolute -top-20 -left-1 mobile:left-5.7rem">
-                <img class="w-8" src="/images/icon-brand-recognition.svg" alt="recognition">
+                <img class="w-8" src="./images/icon-brand-recognition.svg" alt="recognition">
               </div>
             
 
@@ -157,13 +154,13 @@
             </div>
           </div>
 
-          <div class="absolute h-3 w-11 bg-cyanbar left-80 top-32 transform mobile:rotate-90 mobile:h-0.60rem mobile:top-15.1rem mobile:left-8.35rem 1303px:hidden"></div>
+          <div class="absolute h-3 w-11 bg-cyanbar left-80 top-28 transform mobile:rotate-90 mobile:h-0.60rem mobile:top-15.1rem mobile:left-8.35rem 1303px:hidden"></div>
 
-          <div class="bg-white rounded-md w-20rem h-56 px-8 pb-6 mr-11 relative transform translate-y-11 shadow-2xl mobile:mr-0 mobile:translate-y-4.7rem">
+          <div class="bg-white rounded-md w-20rem h-56 px-8 pb-6 mr-11 relative transform translate-y-11 shadow-2xl lgmax:mr-0 mobile:translate-y-4.7rem">
             <div class="absolute w-17rem mt-12 mobile:w-64">
 
               <div class="bg-darkviolet p-4 rounded-full inline-block absolute -top-20 -left-1 mobile:left-5.7rem">
-                <img class="w-8" src="/images/icon-detailed-records.svg" alt="detailed">
+                <img class="w-8" src="./images/icon-detailed-records.svg" alt="detailed">
               </div>
 
               <span class="text-lg font-bold text-darkviolet mb-5">Detailed Records</span>
@@ -181,7 +178,7 @@
             <div class="absolute w-17rem mt-12 mobile:w-64">
 
               <div class=" bg-darkviolet p-4 rounded-full inline-block absolute -top-20 -left-1 mobile:left-5.7rem">
-                <img class="w-8" src="/images/icon-fully-customizable.svg" alt="fully-customizable">
+                <img class="w-8" src="./images/icon-fully-customizable.svg" alt="fully-customizable">
               </div>
              
               <span class="text-lg font-bold text-verydarkviolet mb-5">Fully Customizable</span>

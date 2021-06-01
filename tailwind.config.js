@@ -32,9 +32,30 @@ module.exports = {
         'mobile': { 'max': '375px'},
         'minmobile' : {'min' : '376px'}, 
         'margin' : { 'min' : '376px', 'max': '641px' },
+        'smmax' : { 'max': '640px'},
         'mdmax': { 'max': '768px'},
         'lgmax': { 'max' : '1024px'},
-        '1303px': {'max' : '1303px', 'min': '376px' }
+        'lgmax2': { 'max' : '1023px'},
+        '1303px': {'max' : '1303px', 'min': '376px' },
+
+        // nav Bar
+        'max850': { 'max': '850px' },
+        'min849': { 'min' : '849px '},
+
+        //Shorten Bar Input
+        'max769': { 'max': '769px' },
+
+        // Menu mobile 
+        'max580' : {'min': '376px', 'max': '580px'},
+
+        //Background Light Gray
+        'max895': { 'min': '376px', 'max' : '895px'},
+        'max1303': { 'min': '896px', 'max': '1303px'},
+
+        //Div Links
+        'max900': { 'min' : '743px ', 'max': '900px' },
+        'max742': { 'min': '570px', 'max' : '742px'},
+        'max569': { ' min' : '569px', 'max ': '376px'}
       },
 
       lineHeight: {
@@ -68,9 +89,12 @@ module.exports = {
         '55rem': '55rem',
         '50rem': '50rem',
         '60rem': '60rem',
+        '64rem': '64rem',
+        '78rem': '78rem',
         '80rem': '80rem',
         '85rem': '85rem',
-        '87%': '87%'
+        '87%': '87%',
+        '93%': '93%',
       },
 
       fontSize: {
