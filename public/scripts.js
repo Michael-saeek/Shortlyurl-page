@@ -107,9 +107,8 @@ async function shorterUrl(inputlink) {
             document.execCommand('copy')
             document.body.removeChild(element)
             e.innerHTML = 'Copied'
-            e.classList.remove('button')
-            e.classList.add('btndarkviolet')
-               
+            e.classList.remove('buttons')
+            e.classList.add('btndarkviolet')        
         }
     }
 
@@ -160,7 +159,6 @@ function makingDivsFromLocalStorage() {
             </div>
         </div>`
 
-        
     }
 
     Divlinks.appendChild(element)
